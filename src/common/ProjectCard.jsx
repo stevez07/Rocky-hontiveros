@@ -1,7 +1,7 @@
 
 
 
-function ProjectCard({ src, link, h3, p }) {
+function ProjectCard({ src, link, h3, p, skills }) {
   return (
     <>
       <article class="projects__card">
@@ -16,9 +16,7 @@ function ProjectCard({ src, link, h3, p }) {
                   </p>
 
                   <div class="projects__skills">
-                      <img src="assets/img/skills-bootstrap.svg" alt="image" class="projects__skill"/>
-                      <img src="assets/img/skills-css.svg" alt="image" class="projects__skill"/>
-                      <img src="assets/img/skills-html.svg" alt="image" class="projects__skill"/>
+                      <img src={skills} alt="image" class="projects__skill"/>
                   </div>
 
                   <a href="" target="_blank" class="projects__button">
